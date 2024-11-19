@@ -1,0 +1,752 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+header {
+    width: 100%;
+    height: 60px;
+    padding: 10px 154px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0px 5px 30px 5px rgb(204, 204, 204);
+}
+
+header h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: 23px;
+    letter-spacing: 1.2px;
+}
+
+header h1 span {
+    background-color: #39db4a;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 8px;
+}
+
+header .header_links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+header .header_links a {
+    font-size: 16px;
+    color: #272727;
+    font-family: "Poppins", sans-serif;
+    transition: 0.33s;
+}
+
+header .header_links a:hover {
+    color: #39db4a;
+}
+
+header .header_links select {
+    border: none;
+    color: #272727;
+    font-size: 16px;
+    transition: 0.33s;
+    outline: none;
+}
+
+header .header_links select:hover {
+    color: #39db4a;
+}
+
+header .header_items {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+header .header_items i {
+    font-size: 16px;
+    color: #272727;
+}
+
+header .header_items button {
+    width: 179px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #39db4a;
+    font-size: 16px;
+    color: #fff;
+}
+
+header .header_items button i {
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 110vh;
+    padding: 80px 10%;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+}
+
+.container .container_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container_text h1 {
+    width: 550px;
+    font-size: 65px;
+}
+
+
+.container .container_text h1 span {
+    color: #39db4a;
+}
+
+.container .container_text p {
+    width: 550px;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.container .container_text .btn {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.container .container_text .btn button {
+    width: 230px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+    background-color: #39db4a;
+    color: #fff;
+    font-size: 25px;
+}
+.container .container_text .btn button:hover{
+    box-shadow: 0px 0px 30px 5px rgb(166, 166, 166);
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.container .container_text .btn .btn_a {
+    background-color: transparent;
+    color: #000;
+    display: flex;
+    gap: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.container .container_text .btn .btn_a:hover{
+    box-shadow: 0px 0px 30px 5px rgb(34, 218, 52);
+    transition: 0.7s;
+}
+
+
+.container .container_text .btn .btn_a i {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 0px 5px 30px 5px rgb(204, 204, 204);
+}
+
+.container .container_image .image {
+    width: 550px;
+    height: 550px;
+    background-color: #39db4a;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 100px;
+}
+
+.container .container_image .image img {
+    width: 620px;
+    height: 690px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+.container .container_image .nood {
+    width: 350px;
+    height: 130px;
+    background-color: #ffffff;
+    display: flex;
+    gap: 20px;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0px 10px 30px 5px rgb(166, 166, 166);
+    position: absolute;
+    top: 680px;
+    right: 500px;
+}
+
+.container .container_image .nood .nood_text h3 {
+    font-size: 20px;
+}
+
+.container .container_image .nood .nood_text img {
+    padding: 10px 0;
+}
+
+.container .container_image .nood .nood_text p {
+    font-size: 25px;
+}
+
+.container .container_image .nood .nood_text p span {
+    font-size: 18px;
+    color: red;
+}
+
+.container .container_image .nood2 {
+    position: absolute;
+    top: 680px;
+    right: 120px;
+}
+
+.container .container_image .hot {
+    width: 180px;
+    height: 40px;
+    box-shadow: 0px 10px 30px 5px rgb(166, 166, 166);
+    position: absolute;
+    top: 210px;
+    right: 600px;
+    border-radius: 20px 20px 0 20px;
+    text-align: center;
+    padding: 9px 0;
+    background-color: #fff;
+    color: crimson;
+}
+
+/* Box start */
+
+.box {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.box p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: crimson;
+}
+
+.box h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.box .box_items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+
+.box .box_items .box_item {
+    width: 250px;
+    height: 330px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 10px 30px 5px rgb(166, 166, 166);
+
+}
+.box .box_items .box_item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px 5px rgb(2, 175, 255);
+    transform: rotate(360deg);
+    transition: 0.8s;
+}
+
+.box .box_items .box_item .image {
+    width: 150px;
+    height: 150px;
+    background-color: #d8f6db;
+    border-radius: 80px;
+    margin: auto;
+}
+
+.box .box_items .box_item .image img {
+    margin-top: 20px;
+}
+
+
+.box .box_items .box_item h2 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+
+.box .box_items .box_item p {
+    font-size: 20px;
+    color: gray;
+    margin-top: 30px;
+}
+
+/* Box end */
+
+
+/*  *item start*/
+
+.items {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 10%;
+    position: relative;
+}
+
+.items p {
+    font-size: 25px;
+    color: crimson;
+    letter-spacing: 1.3px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.items h1 {
+    width: 580px;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.items .click {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 200px;
+    top: 240px;
+}
+
+.items .click .div {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(194, 194, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items .click .div i {
+    font-size: 25px;
+    color: #000;
+}
+
+.items .click .green i {
+    color: #fff;
+}
+
+
+.items .click .green {
+    width: 50px;
+    height: 50px;
+    background-color: #39db4a;
+}
+
+.item .cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item .cart p {
+    display: flex;
+}
+
+.items .item .image {
+    width: 310px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items .item .image img {
+    width: 200px;
+    height: 200px;
+}
+
+.items .item {
+    width: 380px;
+    height: 490px;
+    padding: 35px;
+    box-shadow: 0px 10px 30px 5px rgb(166, 166, 166);
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    position: relative;
+}
+.items .item:hover{
+    box-shadow: 0px 0px 30px 5px rgb(0, 255, 60);
+    background-color: rgb(225, 255, 232);
+    transform: scale(1.05);
+    transition: 1s;
+
+}
+
+.items .item h2 {
+    font-size: 35px;
+    margin-top: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.items .item p {
+    font-size: 20px;
+    color: rgb(182, 182, 182);
+    margin-top: 30px;
+}
+
+.items .item h1 {
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.items .item h1 span {
+    color: red;
+    font-size: 32px;
+}
+
+.items .item p {
+    color: #000;
+}
+
+.items .item p i {
+    color: gold;
+}
+
+.items .item .icon {
+    width: 70px;
+    height: 60px;
+    border-radius: 0 30px 0 30px;
+    background-color: #39db4a;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.items .item .icon i {
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.item_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* item edn *
+
+/* start Testimonials */
+
+.testimonials {
+    width: 100%;
+    font: 100vh;
+    padding: 100px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials .image {
+    width: 520px;
+    height: 300px;
+    border-radius: 150px 150px 20px 20px;
+    background-color: #39db4a;
+    margin-top: 400px;
+    position: relative;
+}
+
+.testimonials .image .text {
+    width: 230px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 0px 20px 20px 20px;
+    padding: 5px 30px;
+    font-size: 18px;
+    box-shadow: 0px 10px 30px 5px rgb(166, 166, 166);
+    position: absolute;
+    top: 280px;
+    left: 300px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.testimonials .image img {
+    width: 400px;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+}
+
+
+.testimonials .testimonials_text b {
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: red;
+}
+
+.testimonials .testimonials_text h1 {
+    width: 500px;
+    margin-top: 80px;
+    font-size: 50px;
+}
+
+.testimonials .testimonials_text p {
+    width: 500px;
+    font-size: 23px;
+    line-height: 1.5;
+    margin-top: 80px;
+    color: gray;
+}
+
+.testimonials .testimonials_text .div {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+}
+
+.testimonials .testimonials_text .div img {
+    width: 100px;
+    height: 100px;
+}
+
+.testimonials .testimonials_text .div .bir {
+    width: 90px;
+    height: 90px;
+
+}
+
+
+
+.testimonials .testimonials_text .div .ikki {
+    position: absolute;
+    left: 65px;
+}
+
+.testimonials .testimonials_text .div .uch {
+    position: absolute;
+    left: 130px;
+}
+
+.testimonials .testimonials_text .div .div_text {
+    width: 200px;
+    position: absolute;
+    left: 260px;
+
+}
+
+.testimonials .testimonials_text .div .div_text p {
+    width: 250px;
+    margin-top: 0;
+    color: gray;
+}
+
+.testimonials .testimonials_text .div .div_text p span {
+    color: #000;
+}
+
+.testimonials .testimonials_text .div .div_text p i {
+    color: gold;
+}
+
+.testimonials .testimonials_text .div .div_text h3 {
+    width: 300px;
+    font-size: 25px;
+    letter-spacing: 1.3px;
+    display: block;
+}
+
+/* Testimonials end */
+
+/* services start */
+
+.services {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .services_text h3 {
+    font-size: 20px;
+    color: red;
+    letter-spacing: 1.5px;
+}
+
+
+.services .services_text h1 {
+    font-size: 65px;
+    width: 650px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+.services .services_text p {
+    font-size: 25px;
+    color: gray;
+    width: 650px;
+    letter-spacing: 1.5px;
+    margin-top: 50px;
+    line-height: 1.5;
+}
+
+.services .services_text button {
+    width: 150px;
+    height: 50px;
+    border-radius: 60px;
+    border: none;
+    background-color: #39db4a;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;    
+
+
+}
+.services .services_text button:hover{
+    box-shadow: 0px 0px 80px 5px rgb(7, 255, 48);
+transition: 1s;
+
+}
+
+.services .services_cards {
+    height: auto;
+
+}
+
+.services .services_cards .cards {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.services .services_cards .cards .card {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+
+    box-shadow: 0px 10px 30px 5px rgb(202, 202, 202);
+
+}
+.services .services_cards .cards .card:hover{
+    box-shadow: 0px 10px 30px 5px rgb(0, 255, 89);
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+
+.services .services_cards .cards .card h1{
+    font-size: 20px;
+    color: #39db4a;
+}
+
+.services .services_cards .cards .card p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #39db4a;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    padding: 50px 10%;
+
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer1 h1{
+    font-family: "Poppins", sans-serif;
+    font-style: 23px;
+    letter-spacing: 1.2px;
+}
+
+footer .footer1 h1 span {
+    background-color: #39db4a;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 8px;
+}
+
+footer .footer1 p{
+    width: 250px;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    margin-top: 30px;
+}
+footer .fax{
+    line-height: 2.5;
+}
+footer .fax ul li{
+    color: gray;
+}
+
+.copyright{
+    width: 100%;
+    padding: 50px 10%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.copyright .icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #e1ffe4;
+    padding: 9px;
+}
+.copyright .icon:hover{
+    background-color: #39db4a;
+    color: #fff;
+}
+.copyright p{
+    color: gray;
+    margin-left: 200px;
+}
+
+
+/* services end */
